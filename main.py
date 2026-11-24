@@ -45,6 +45,10 @@ def main() -> None:
         raise SystemExit("entry must be 1 to 200 characters of text")
     if "\n" in LINE:
         raise SystemExit("entry must be a single line of text")
+    if any(ord(ch) < 0x20 for ch in LINE):
+        raise SystemExit("entry must not contain control characters")
+    if LINE != LINE.strip():
+        raise SystemExit("entry must not start or end with whitespace")
     path = output_path()
     parent = os.path.dirname(path)
     if parent:

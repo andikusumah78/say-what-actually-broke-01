@@ -6,7 +6,7 @@
 
 Entry for the make.fun bounty
 [Say What Actually Broke](https://make.fun/bounty/u-po-pu-say-what-actually-broke-a2c153b5)
-— one line of software error copy (95 characters) that tells the user
+— one line of software error copy (91 characters) that tells the user
 the brutal truth about what went wrong and makes them laugh on the way:
 the database is full, so the save bounced like a bad cheque.
 
